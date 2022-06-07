@@ -1,0 +1,10 @@
+# The Dictonary Type , keys unique but values not so...
+empty_dict = dict()  # Dict function to create Dict Object - empty
+print("Empty Dict representation: ", empty_dict)
+
+# k for key with asscioated values - key value pairs...
+dict_syn = {'k0': 'v0', 'k1': 'v1', 'k2': 'v2', 'k3': 'v3', 'k4': 'v4'}
+print("dict_syn: ", dict_syn)
+print("dict_syn[k2] is: ", dict_syn['k2'])  # Show at given position
+dict_syn['k5'] = 'v5'  # add a element into dict, del will delete a functon
+print("dict_syn with added value k5 is: ", dict_syn)
