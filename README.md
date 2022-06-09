@@ -1,2 +1,3 @@
 # Python
-E_College Python Course Programs
+Python Learning with E College Ireland, and other programs & learning along the way.
+
