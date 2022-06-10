@@ -32,3 +32,4 @@ print("Car at position is: ", complete_cars_list1.index(
 
 complete_cars_list1.remove("Ferrari 340")  # Removes queried element
 print("Complete cars list: ", complete_cars_list1)
+
