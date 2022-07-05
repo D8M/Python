@@ -11,3 +11,4 @@ print(sum(list_numbers))
 # list_numbers *= 2 is the same as list_numbers = list_numbers * 2 Only works on Ints
 print(all(list_numbers))
 print(any(list_numbers))
+
