@@ -26,3 +26,12 @@ print("\nstock quantities consumed: ", stock_consumed)
 # Lookup by key - returns list
 print("\nStock consumed", stock_consumed['Pear'])
 print("\nStock consumed by index", stock_consumed['Pear'][1])
+
+
+daily_stock_consumed = { # Dict in a Dict
+'banana' : { 'fri' : 70, 'Sat' : 50, 'Sun' : 23 },
+'pear' : {'fri' : 54, 'Sat' : 47, 'Sun' : 22}
+}
+print("\nWhat was consumed on a given day: ",daily_stock_consumed['banana']['Sat'])# Nested lookup
+
+
