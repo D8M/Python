@@ -32,25 +32,25 @@
 
 ####################################################################
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for num in numbers:
-    result = num * 10
+# for num in numbers:
+#     result = num * 10
 
-    print(result, "Is the result of ", num, " times 10 ")
+#     print(result, "Is the result of ", num, " times 10 ")
 
 #####################################################################
-results = []
+# results = []
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-square = 0
-for val in numbers:
-    results.append(val ** 2)
-    print("\nSquare of ", val, " is ", square)
+# square = 0
+# for val in numbers:
+#     results.append(val ** 2)
+#     print("\nSquare of ", val, " is ", square)
 
 
-print("\nResults: ", results)
+# print("\nResults: ", results)
 
 #######################################################################
 
@@ -63,22 +63,77 @@ print("\nResults: ", results)
 
 ########################################################################
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for num in numbers:
-    print(num)
-else:
-    # The program will enter the else block after all for loop iterations completed
-    print("\nNo more items in list")
+# for num in numbers:
+#     print(num)
+# else:
+#     # The program will enter the else block after all for loop iterations completed
+#     print("\nNo more items in list")
 
 ##########################################################################
 
-colours_list = ["Red", "Green", "Blue"]
-items_list = ["Pen", "Marker", "Pencil"]
+# colours_list = ["Red", "Green", "Blue"]
+# items_list = ["Pen", "Marker", "Pencil"]
 
-for colour in colours_list:
-    for item in items_list:
+# for colour in colours_list:
+#     for item in items_list:
 
-        print(colour, item)
+#         print(colour, item)
 
 ###########################################################################
+# Range Function
+
+# my_range = range(5,15)
+# tuple_of_nums = (my_range)
+# list_of_nums =(my_range)
+# print(tuple_of_nums)
+# print(list_of_nums)
+
+# for i in tuple_of_nums:
+#     print(i)
+
+#############################################################################
+
+# Setting intervals in a range
+
+# for val in range (0,10 +1): # n +1
+#     print(val)
+
+# x = range(6)
+
+# for i in reversed(x):
+#     print(i)
+
+###############################################################################
+
+# Range is divisible by summat?
+# num_list = []
+# num_list_not_divisible = []
+# for i in range(1, 100):
+#     if i % 2 == 0:
+#         num_list.append(i)
+#         print("These nums are divisible by 2" ,num_list)
+
+#     else:
+#         num_list_not_divisible.append(i)
+#         print("These numbers are not divisible", num_list_not_divisible )
+
+#################################################################################
+
+# Using for to iterate over a larger num list to check for divisibles
+
+items = []  # empty list of items
+
+for i in range(201, 301):  # go over range from 0 to 300 inclusive
+    num_str = str(i)  # Convert each int of i to a string using the str wrapper
+
+    # 1st char in num_str converted to int to check if its even
+    first_digit = int(num_str[0])
+    second_digit = int(num_str[1])  
+    third_digit = int(num_str[2])  
+
+    if (first_digit % 2 == 0) and (second_digit % 2 == 0) and (third_digit % 2 == 0):
+        items.append(num_str)
+
+    print(", ".join(items))
