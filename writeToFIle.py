@@ -1,0 +1,5 @@
+writeFile = open('edit.txt', 'w')
+toLog = input("What do you wish to write to the edit?")
+writeFile.write(toLog)
+writeFile.close()
+print("Writing complete")
